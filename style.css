@@ -1,0 +1,77 @@
+html {
+    height: 100%;
+    min-height: 100%;
+}
+
+#navbar {
+    display: grid;
+    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-rows: 50px;
+    grid-template-areas:'. gmail images menu signin';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+    font-size: 15px ;
+}
+
+#gmail {
+grid-area: gmail;
+justify-self: center;
+align-self: center;
+}
+#images {
+grid-area: images;
+justify-self: center;
+align-self: center;
+}
+#menu {
+grid-area: menu;
+justify-self: center;
+align-self: center;
+}
+#signin {
+grid-area: signin;
+justify-self: center;
+align-self: center;
+}
+
+#main {
+    display: grid;
+    height: 88vh;
+    grid-template-columns: 220px auto 270px;
+    grid-template-rows: 255px 65px 65px 270px;
+    grid-template-areas: 
+    ". logo ."
+    ". search ."
+    ". flexbox ."
+    ". language .";
+}
+
+#logo {
+    grid-area: logo;
+    margin-top: auto;
+    margin-bottom: 20px;
+    justify-self: center;
+}
+#search {
+    grid-area: search;
+    height: 35px;
+    align-self: center;
+    justify-self: center;
+    width: 555px;
+}
+#language {
+    grid-area: language;
+    justify-self: center;
+}
+
+#flexbox {
+    display: flex;
+    grid-area: flexbox;
+    justify-self: center;
+    align-self: center;
+}
+
