@@ -5,7 +5,7 @@ html {
 
 #navbar {
     display: grid;
-    grid-template-columns: 1fr 50px 50px 50px 50px;
+    grid-template-columns: 1fr 56px 56px 56px 81px;
     grid-template-rows: 50px;
     grid-template-areas:'. gmail images menu signin';
 }
@@ -13,29 +13,52 @@ html {
 a {
     text-decoration: none;
     color: black;
-    font-family: sans-serif;
-    font-size: 15px ;
+    font-family: arial, sans-serif;
+    font-size: 13px ;
 }
 
 #gmail {
 grid-area: gmail;
+margin-right: 7px;
 justify-self: center;
-align-self: center;
+margin-top: 25%;
+}
+
+#gmail:hover {
+    text-decoration: underline;
 }
 #images {
 grid-area: images;
 justify-self: center;
-align-self: center;
+margin-top: 25%;
+}
+
+#images:hover {
+    text-decoration: underline;
 }
 #menu {
 grid-area: menu;
 justify-self: center;
-align-self: center;
+margin-right: 5px;
+margin-top: 25%;
 }
+
+#menu-opacity {
+    opacity: 0.75;
+}
+#menu-opacity:hover {
+    opacity: 1;
+}
+
 #signin {
 grid-area: signin;
-justify-self: center;
-align-self: center;
+margin-right: 25px;
+margin-top: 14.75px;
+border: 1px solid;
+font-weight: bold;
+outline: none;
+background: #4285f4;
+color: #fff;
 }
 
 #main {
